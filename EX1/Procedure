@@ -1,6 +1,11 @@
-Create a file with .l extension (e.g., lexer.l) where you write the LEX code. 
-Inside the file, define how to recognize tokens using regular expressions. 
-Use the lex command to convert your .l file into a C program (lex.yy.c). 
-Compile the generated C program using gcc to produce an executable. 
-Run the executable and give it input C code. 
-The output will show you which tokens were recognized (like <IDENTIFIER, x>, <NUMBER, 10>, etc.). 
+Open a terminal and create a new LEX file, e.g., lexical.l. 
+In the definitions section, include headers and declare the symbol table. 
+In the rules section, define patterns for identifiers, constants, comments, and operators. 
+Use { printf(...) } actions to print the recognized tokens. 
+Write a helper function to insert identifiers into the symbol table. 
+Save and compile the file using: 
+lex lexical.l 
+gcc lex.yy.c -o lexical 
+Run the executable: 
+./lexical < input.c> 
+Observe the output and verify the tokens and symbol table entries. 
