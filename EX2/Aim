@@ -1,1 +1,0 @@
-The goal is to create a program that reads a C source code file and identifies individual tokens such as identifiers, keywords, constants, operators, comments, etc. We use the LEX tool to do this automatically using regular expressions. 
