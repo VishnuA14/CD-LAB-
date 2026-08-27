@@ -1,8 +1,0 @@
-Write the control.l file using LEX to tokenize control structure keywords. 
-Write the control.y file using YACC to define grammar rules for C control structures. 
-Compile and execute the program using: 
-  o lex control.l 
-  o yacc -d control.y 
-  o gcc lex.yy.c y.tab.c -o control 
-  o ./control
-Input sample control structures in C-style syntax to check for validation. 
